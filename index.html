@@ -195,17 +195,17 @@
 
       const gravity = 0.25;
       const jump = 6.5;
-      const PIPE_GAP = 160;
+      const PIPE_GAP = 300;
       const pipeSpeed = 2.5;
 
       const bird = {
         x: canvas.width / 6,
         y: canvas.height / 2,
-        radius: canvas.width / 25,
+        radius: canvas.width / 20,
         velocity: 0,
         draw() {
           const birdWidth = this.radius * 6;
-          const birdHeight = this.radius * 3;
+          const birdHeight = this.radius * 6;
           ctx.drawImage(
             birdImg,
             this.x - birdWidth / 2,
